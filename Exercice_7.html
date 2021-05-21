@@ -31,8 +31,6 @@
             function submitInfo() {
                 let shoeSize = document.getElementById('shoeSize').value;
                 let yearOfBirth = document.getElementById('yearOfBirth').value;                
-
-
                 document.write(`<ol><li>Multiplier la pointure (${shoeSize}) par 2 = ${shoeSize*2} </li> <li>Ajouter 5 au résultat = ${(shoeSize * 2 + 5)} </li><li>Multiplier le tout par 50 = ${((shoeSize * 2 + 5)*50)} </li> <li> Soustraire l’année  de naissance = ${(((shoeSize * 2 + 5)*50)-yearOfBirth)} </li><li>Ajouter au tout 1766 = ${((((shoeSize * 2 + 5)*50)-yearOfBirth)+1766)} </li></ol>`) ;
             }
         </script>
