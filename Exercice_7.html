@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <p>
+            Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants :
+        </p>
+            <ol>
+                <li>Multiplier la pointure par 2</li>
+                <li>Ajouter 5 au résultat</li>
+                <li>Multiplier le tout par 50</li>
+                <li>Soustraire l’année de naissance</li>
+                <li>Ajouter au tout 1766</li>
+                
+
+            </ol>
+
+            <p>La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure. Attention : n'utiliser qu'une seule variable de résultat.</p>
+
+        
+        <form onsubmit="submitInfo()">
+            <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize"/><br/>
+            <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth"/><br/>
+            <button id="submit" name="submit">Valider</button>
+        </form>
+
+        <script>      
+            function submitInfo() {
+                let shoeSize = document.getElementById('shoeSize').value;
+                let yearOfBirth = document.getElementById('yearOfBirth').value;                
+                document.write('<ol><li>Multiplier la pointure par 2 = ' + shoeSize * 2  + '</li> <li>Ajouter 5 au résultat = ' + (shoeSize * 2 + 5) + '</li><li>Multiplier le tout par 50 =' + ((shoeSize * 2 + 5)*50) + '</li><li>Soustraire l’année de naissance = '  + (((shoeSize * 2 + 5)*50)-yearOfBirth) + '</li><li>Ajouter au tout 1766 = ' + ((((shoeSize * 2 + 5)*50)-yearOfBirth)+1766) + '</li></ol>') ;
+            }
+        </script>
+    </body>
+</html>
++ ((shoeSize * 2 + 5)*50)-

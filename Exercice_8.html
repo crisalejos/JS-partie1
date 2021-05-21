@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_8</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <form onsubmit="submitInfo()">
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button id="submit" name="submit">Valider</button>
+        </form>
+        <script>      
+            function submitInfo() {
+                let age = document.getElementById('age').value;
+                if (age < 18) {
+                    document.write('Vous êtes mineur ') ;
+                } else {
+                    document.write('Vous êtes majeur ') ;
+                }                                            
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8" />
+    </head>
+    
+<body>             
+        <form id="form"   onsubmit="submitInfo()">
+            <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname" />
+            <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+            <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+            <button type="submit"  name="submit" id="submit">Valider</button>
+        </form>
+        <script>      
+            function submitInfo() {
+                let lastName = document.getElementById('lastname').value;
+                let firstName = document.getElementById('firstname').value;
+                let city = document.getElementById('city').value;
+                alert('Nom : ' + lastName + '\nPrénom : '  + firstName + '\nVille : '  + city + '') ;
+            }
+        </script>        
+    </body>
+</html>
