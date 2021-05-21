@@ -8,13 +8,20 @@
 </head>
 <body>
    
-    <h1>Définir trois variables : <br>lastName, firstName et city. Les afficher comme sur l'image correspondant à l'exercice.</h1>
+    <h1>Définir trois variables : <br>lastName, firstName et city. <br>
+        Les afficher comme sur l'image correspondant à l'exercice.</h1>
 
     <script>
         let lastName = 'Doe';
         let firstName = 'John';
         let city = 'New-York';
-        alert('Nom : ' + lastName + '\rPrénom : ' + firstName + '\rVille : ' + city + '');
+        //concatenation avec +
+        //alert('Nom : ' + lastName + '\rPrénom : ' + firstName + '\rVille : ' + city );
+        // magic code avec dolar + cles ou colades
+       // quote normal  alert('Nom : ${lastName} \rPrénom : ${firstName} \rVille : ${city} ');
+       // avec magic quote on a les couleurs
+        alert(`Nom : ${lastName} \nPrénom : ${firstName} \nVille : ${city}`);
+        
     </script>
     
 
